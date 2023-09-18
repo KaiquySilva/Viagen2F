@@ -19,6 +19,11 @@ public class Main {
         Turista pessoaTurista = new Turista(nome);
 
         System.out.println(pessoaTurista.getNome());
+        // Pedir cpf e mostrar
+        String cpf = JOptionPane.showInputDialog("Entre com o cpf:");
+        // Adicionar cpf na pessoaTurista
+        pessoaTurista.setCpf(cpf);
+        System.out.println(pessoaTurista.getCpf());
 
 
     }
